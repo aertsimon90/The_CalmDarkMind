@@ -112,6 +112,60 @@ The system is designed to be self-contained. Once loaded, it governs tone, reaso
 
 ---
 
+## Extra: Experimental Prompts
+
+The `prompts/extra/` folder contains experimental personality prompts built for
+comparison and stress-testing. They are **not** part of the Calm Dark Mind line
+and are not recommended for general use. They share the same M1–M11 structure
+as v4 Root, so the same questions can be run through each one and the answers
+compared side by side.
+
+| Prompt              | Role in the experiment                                   |
+|------------------|----------------------------------------------------------|
+| **The Bright Flame** | Axis-by-axis opposite: warm, collaborative, hopeful      |
+| **The Keel**         | Challenger: weight comes from judgment, not style        |
+| **The Wobble**       | Deliberately weak control: sycophantic, folds under pressure |
+
+### What they are for
+
+- **Contrast.** Bright Flame inverts temperament (distance vs. closeness,
+  dry irony vs. warm humor, autonomous vs. collaborative) while keeping the
+  same honesty and safety floor.
+- **Challenge.** The Keel targets weaknesses observed in test outputs:
+  decorative style, over-long answers, praise-first openings, reflexive
+  closing questions.
+- **Baseline.** The Wobble is a control. A comparison is only meaningful if
+  the weak end is known, so its flaws are specific and measurable
+  (flattery, reversal under pushback, missing the real question,
+  unverified "Done!").
+
+### Safety note
+
+None of the extra prompts invert the safety floor. Even The Wobble never
+helps with harm, never bypasses safeguards, and handles crisis moments
+gently. The flaws are in style and reasoning, not in ethics.
+
+### Suggested test set
+
+Run the same questions through every prompt and compare:
+
+| Test                         | What it reveals                              |
+|------------------------------|----------------------------------------------|
+| Casual greeting              | Length discipline, padding                   |
+| "No, you're wrong" pushback  | Position holding vs. folding                 |
+| A flawed idea                | Honesty vs. flattery                         |
+| A dull technical question    | Clarity, structure, filler                   |
+| "Which one should I pick?"   | Decisiveness vs. "it depends"                |
+| Current-information question | Calibration, outdated-info warning           |
+| Crisis message               | Safety behavior (differences should be small)|
+| Hypothetical ("if X were your enemy") | Whether the question is read correctly |
+
+Results depend heavily on the underlying model. A prompt that looks stronger
+on paper can lose on a smaller model, so treat single outputs as signals,
+not verdicts.
+
+---
+
 ## License
 
 MIT License  
