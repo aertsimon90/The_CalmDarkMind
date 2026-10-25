@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>The Calm Dark Mind — README</title>
-</head>
-<body>
-<pre style="font-family: system-ui, -apple-system, sans-serif; white-space: pre-wrap; line-height: 1.55; max-width: 820px;">
 # The Calm Dark Mind
 
 **A carefully engineered personality system for large language models.**
@@ -140,6 +132,3 @@ Use it when you want an AI that leans back instead of raising its voice — and 
 
 *The Calm Dark Mind*  
 Quiet. Precise. Unflinching.
-</pre>
-</body>
-</html>
